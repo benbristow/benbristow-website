@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Ben Bristow</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal website of web developer Ben Bristow" />
+    <meta name="author" content="Ben Bristow" />
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="dist/main.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Ben Bristow</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website of web developer Ben Bristow" />
-  <meta name="author" content="Ben Bristow" />
-  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet" />
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="dist/main.css" rel="stylesheet" />
-</head>
+  <body>
+    <div class="bb-wrapper container">
+      <header class="bb-header">
+        <div class="bb-header__brand">
+          <h1><a href="/">Ben Bristow</a></h1>
+        </div>
 
-<body>
-  <div class="bb-wrapper container">
-    <header class="bb-header">
-      <div class="bb-header__brand">
-        <h1><a href="/">Ben Bristow</a></h1>
-      </div>
+        <nav class="bb-header__nav" id="bb-nav">
+          <button type="button" class="btn btn-link bb-header__burger-button" id="bb-nav-burger-button">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
 
-      <nav class="bb-header__nav" id="bb-nav">
-        <button type="button" class="btn btn-link bb-header__burger-button" id="bb-nav-burger-button">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Portfolio">Portfolio</a></li>
+            <li><a href="/CV">CV</a></li>
+            <li><a href="/Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/Portfolio">Portfolio</a></li>
-          <li><a href="/CV">CV</a></li>
-          <li><a href="/Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+      {{ content }}
 
-    {{ content }}
+      <footer class="container bb-footer">
+        <div class="col-md-12">
+          <div class="bb-footer__line" role="separator"></div>
 
-    <div class="container bb-footer">
-      <div class="col-md-12">
-        <div class="bb-footer__line" role="separator"></div>
+          <div class="d-flex">
+            <div class="bb-footer__copyright">
+              &copy;{{ 'now' | date: "%Y" }} Ben Bristow
+            </div>
 
-        <div class="d-flex">
-          <div class="bb-footer__copyright">
-            &copy;{{ 'now' | date: "%Y" }} Ben Bristow
-          </div>
+            <div class="bb-footer__social">
+              <a href="https://www.linkedin.com/in/benbb" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-linkedin"></i>
+              </a>
 
-          <div class="bb-footer__social">
-            <a href="https://www.linkedin.com/in/benbb" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-linkedin"></i>
-            </a>
+              <a href="https://www.instagram.com/benbristowuk" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-instagram"></i>
+              </a>
 
-            <a href="https://www.instagram.com/benbristowuk" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-instagram"></i>
-            </a>
+              <a href="https://www.twitter.com/benbristowuk" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-twitter"></i>
+              </a>
 
-            <a href="https://www.twitter.com/benbristowuk" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-twitter"></i>
-            </a>
-
-            <a href="https://www.github.com/benbristow" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-github"></i>
-            </a>
+              <a href="https://www.github.com/benbristow" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
-  </div>
-
-  <script src="dist/main.js"></script>
-</body>
-
+    
+    <script src="dist/main.js"></script>
+  </body>
 </html>
