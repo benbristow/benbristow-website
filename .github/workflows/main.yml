@@ -18,7 +18,7 @@ jobs:
       run: bundle install
       
     - name: Build Jekyll site 
-      run: jekyll build
+      run: bundle exec jekyll build
       
     - name: Deploy to Azure Blob Storage
       uses: bacongobbler/azure-blob-storage-upload@v1.1.0
