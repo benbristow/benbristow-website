@@ -19,7 +19,14 @@ jobs:
       
     - name: Build Jekyll site 
       run: bundle exec jekyll build
-      
+
+    - name: Build Assets
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm run build
+
     - name: Deploy to Azure Blob Storage
       uses: bacongobbler/azure-blob-storage-upload@v1.1.0
       with:
