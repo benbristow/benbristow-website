@@ -1,0 +1,122 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+
+img {
+  width: 100%;
+}
+
+.bb-wrapper {
+  margin-top: $spacer * 2;
+}
+
+.bb-header {
+  $c: &;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacer;
+
+  &__brand {
+    flex-grow: 1;
+    font-family: 'Kalam', 'Helvetica', sans-serif;
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    ul {
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-left: $spacer;
+        font-weight: bold;
+      }
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    &--open {
+      #{$c}__burger-button {
+        display: none;
+      }
+
+      ul {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        padding-top: 10%;
+        background: rgba(0, 0, 0, 0.9);
+
+        li {
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          font-size: 3rem;
+          line-height: 6rem;
+
+          a {
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+
+  &__burger-button {
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+}
+
+.bb-footer {
+  padding: $spacer 0 ($spacer * 2) 0;
+
+  &__line {
+    border: 1px solid $primary;
+    margin: $spacer 0;
+  }
+
+  &__copyright {
+    flex-grow: 1;
+  }
+
+  &__social {
+    text-align: right;
+
+    a {
+      font-size: 1.4rem;
+      margin-left: $spacer;
+      text-decoration: none;
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}
