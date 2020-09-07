@@ -17,12 +17,16 @@ jobs:
     - name: Run bundle install
       run: bundle install
 
-    - name: Build Assets
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build
+
+    - name: Install Node Dependencies
+      run: npm ci
+
+    - name: Build Assets
+      run: npm run build
       
     - name: Build Jekyll site 
       run: bundle exec jekyll build
