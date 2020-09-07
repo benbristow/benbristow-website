@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{{ page.title }} | Ben Bristow</title>
     <meta charset="utf-8" />
@@ -20,7 +20,7 @@
         </div>
 
         <nav class="bb-header__nav" id="bb-nav">
-          <button type="button" class="btn btn-link bb-header__burger-button" id="bb-nav-burger-button">
+          <button type="button" class="btn btn-link bb-header__burger-button" id="bb-nav-burger-button" aria-label="Open Mobile Menu">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
 
@@ -41,23 +41,23 @@
 
           <div class="d-flex">
             <div class="bb-footer__copyright">
-              &copy;{{ 'now' | date: "%Y" }} Ben Bristow
+              &copy; {{ 'now' | date: "%Y" }} Ben Bristow
             </div>
 
             <div class="bb-footer__social">
-              <a href="https://www.linkedin.com/in/benbb" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/benbb" aria-label="My LinkedIn" target="_blank" rel="noopener noreferrer">
                 <i class="fa fa-linkedin"></i>
               </a>
 
-              <a href="https://www.instagram.com/benbristowuk" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/benbristowuk" aria-label="My Instagram" target="_blank" rel="noopener noreferrer">
                 <i class="fa fa-instagram"></i>
               </a>
 
-              <a href="https://www.twitter.com/benbristowuk" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.twitter.com/benbristowuk" aria-label="My Twitter" target="_blank" rel="noopener noreferrer">
                 <i class="fa fa-twitter"></i>
               </a>
 
-              <a href="https://www.github.com/benbristow" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.github.com/benbristow" aria-label="My GitHub" target="_blank" rel="noopener noreferrer">
                 <i class="fa fa-github"></i>
               </a>
             </div>
