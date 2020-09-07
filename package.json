@@ -5,6 +5,10 @@
     "build": "parcel build assets/main.js"
   },
   "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
     "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "sass": "^1.26.10"
   }
 }

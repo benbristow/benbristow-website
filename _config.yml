@@ -1,5 +1,5 @@
 title: Ben Bristow
-baseurl: ""
-url: "https://www.benbristow.co.uk"
+exclude:
+  - assets/
 plugins:
   - jekyll-feed
