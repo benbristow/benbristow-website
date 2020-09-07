@@ -2,4 +2,7 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.cache
 vendor
+dist
+node_modules

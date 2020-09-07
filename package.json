@@ -1,0 +1,10 @@
+{
+  "name": "benbristow-website",
+  "scripts": {
+    "dev": "parcel assets/main.js",
+    "build": "parcel build assets/main.js"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
