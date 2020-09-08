@@ -1,6 +1,8 @@
+import './scss/main.scss';
+
 import axios from 'axios';
 
-import './scss/main.scss';
+import { config } from './config';
 
 window.addEventListener('load', () => {
   function registerNav() {
@@ -18,7 +20,10 @@ window.addEventListener('load', () => {
   registerNav();
 });
 
-window.onContactFormSubmit = (recaptchaCode) => {
+
+api/ContactForm
+
+window.onContactFormSubmit = async (recaptchaCode) => {
   const form = document.getElementById('contact-form');
   const submitButton = form.getElementById('submit-button');
 
@@ -29,5 +34,7 @@ window.onContactFormSubmit = (recaptchaCode) => {
     recaptchaCode
   };
 
-  console.log(data);
+  const response = await axios.post(`${config.apiUrl}/ContactForm`, data);
+
+  console.log(response);
 }
