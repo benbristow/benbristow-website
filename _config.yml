@@ -1,5 +1,17 @@
 title: Ben Bristow
+
 exclude:
   - src/
+
+collections:
+  portfolio_items:
+    output: true
+
+defaults:
+  - scope:
+      type: portfolio_items
+    values:
+      layout: portfolio_items
+
 plugins:
   - jekyll-feed

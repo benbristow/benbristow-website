@@ -1,7 +1,7 @@
 {
   "name": "benbristow-website",
   "scripts": {
-    "dev": "parcel src/main.js",
+    "start": "parcel src/main.js",
     "build": "parcel build src/main.js"
   },
   "dependencies": {

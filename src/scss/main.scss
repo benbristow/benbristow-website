@@ -94,6 +94,22 @@ img {
   }
 }
 
+.bb-portfolio-card {
+  background: $light;
+  margin: ($spacer * 2) 0;
+  padding: $spacer * 1.5;
+
+  @include media-breakpoint-down(md) {
+      .btn {
+          width: 100%;
+      }
+
+      img {
+          margin-bottom: $spacer;
+      }
+  }
+}
+
 .bb-footer {
   padding: $spacer 0 ($spacer * 2) 0;
 
