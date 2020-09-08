@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 import './scss/main.scss';
 
 window.addEventListener('load', () => {
@@ -15,3 +17,17 @@ window.addEventListener('load', () => {
 
   registerNav();
 });
+
+window.onContactFormSubmit = (recaptchaCode) => {
+  const form = document.getElementById('contact-form');
+  const submitButton = form.getElementById('submit-button');
+
+  const data = {
+    name: form.querySelector('[name=Name]').value,
+    email: form.querySelector('[name=EmailAddress]').value,
+    message: form.querySelector('[name=Message]').value,
+    recaptchaCode
+  };
+
+  console.log(data);
+}

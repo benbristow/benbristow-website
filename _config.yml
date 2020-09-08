@@ -2,6 +2,7 @@ title: Ben Bristow
 
 exclude:
   - src/
+  - api/
 
 collections:
   portfolio_items:
