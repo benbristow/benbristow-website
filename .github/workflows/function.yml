@@ -3,10 +3,6 @@ name: Deploy Function to Azure
 on:
   [push]
 
-defaults:
-  run:
-    working-directory: api
-
 env:
   AZURE_FUNCTIONAPP_NAME: radio-api
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'api'
