@@ -4,7 +4,7 @@ on:
   [push]
 
 env:
-  AZURE_FUNCTIONAPP_NAME: radio-api
+  AZURE_FUNCTIONAPP_NAME: benbristowwebsite-funcs
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'api'
   NODE_VERSION: '12.x'
 
