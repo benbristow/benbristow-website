@@ -1,7 +1,7 @@
 import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 import * as Joi from 'joi';
 import * as nodemailer from 'nodemailer';
-import mailgunTransport = require("nodemailer-mailgun-transport");
+import * as mailgunTransport from 'nodemailer-mailgun-transport';
 const Grecaptcha = require('grecaptcha');
 
 const formSchema = Joi.object({
