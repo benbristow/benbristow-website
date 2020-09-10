@@ -17,24 +17,53 @@ window.addEventListener('load', () => {
     }
   }
 
+  function registerContactFormSubmit() {
+    const form = document.getElementById('bb-contact-form');
+    if (form) {
+      const submitButton = form.querySelector('button[type=submit]');
+
+      const handleError = (exception, message) => {
+        alert(message);
+        submitButton.disabled = false;
+        console.error(exception);
+      }
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        submitButton.disabled = true;
+
+        let recaptchaCode;
+        try {
+          recaptchaCode = await grecaptcha.execute('6LdrrMoZAAAAAHV2e1Zr6yID-uykAgmWuu-fk59P', { action: 'submit' });
+        } catch (e) {
+          handleError(e, 'Error verifying with ReCAPTCHA. Please try again.');
+          return;
+        }
+
+        const formData = {
+          name: form.querySelector('[name=Name]').value,
+          email: form.querySelector('[name=EmailAddress]').value,
+          message: form.querySelector('[name=Message]').value,
+          recaptchaCode
+        };
+
+        try {
+          await axios.post(`${config.apiUrl}/ContactForm`, formData);
+          
+          alert("Thanks for your message! I'll be in touch as soon as possible.");
+          form.reset();
+          submitButton.disabled = false;
+          window.scrollTo(0, 0);
+        } catch (e) {
+          handleError(e, e.response ? `Error: ${e.response.data.error}` : 'Error sending message. Please try again');
+          return;
+        }
+      });
+    }
+  }
+
   registerNav();
+  registerContactFormSubmit();
 });
 
-
-api/ContactForm
-
-window.onContactFormSubmit = async (recaptchaCode) => {
-  const form = document.getElementById('contact-form');
-  const submitButton = form.getElementById('submit-button');
-
-  const data = {
-    name: form.querySelector('[name=Name]').value,
-    email: form.querySelector('[name=EmailAddress]').value,
-    message: form.querySelector('[name=Message]').value,
-    recaptchaCode
-  };
-
-  const response = await axios.post(`${config.apiUrl}/ContactForm`, data);
-
-  console.log(response);
-}

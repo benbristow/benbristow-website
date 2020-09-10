@@ -3,6 +3,7 @@ title: Ben Bristow
 exclude:
   - src/
   - api/
+  - .cache/
 
 collections:
   portfolio_items:
