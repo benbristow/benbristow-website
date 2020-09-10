@@ -7,17 +7,11 @@
   "dependencies": {
     "axios": "^0.20.0",
     "bootstrap": "^5.0.0-alpha1",
-    "grecaptcha": "^1.0.3",
-    "nodemailer": "^6.4.11",
-    "nodemailer-mailgun-transport": "^2.0.0",
     "parcel-bundler": "^1.12.4",
     "variables": "^1.0.1"
   },
   "devDependencies": {
-    "@types/grecaptcha": "^3.0.1",
     "@types/node": "^14.10.0",
-    "@types/nodemailer": "^6.4.0",
-    "@types/nodemailer-mailgun-transport": "^1.4.1",
     "sass": "^1.26.10"
   },
   "browserslist": [
