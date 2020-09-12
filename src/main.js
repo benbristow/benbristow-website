@@ -5,7 +5,7 @@ import axios from 'axios';
 import { config } from './config';
 
 window.addEventListener('load', () => {
-  const loadingMask = document.getElementById('bb-loading-mask');
+  const body = document.getElementById('bb-body');
 
   function registerNav() {
     const component = document.getElementById('bb-nav');
@@ -26,13 +26,13 @@ window.addEventListener('load', () => {
 
       const toggleLoading = (loading) => {
         window.scrollTo(0, 0);
-        
+
         submitButton.disabled = loading;
 
         if (loading) {
-          loadingMask.classList.add(`${loadingMask.classList[0]}--loading`);
+          body.classList.add(`${body.classList[0]}--loading`);
         } else {
-          loadingMask.classList.remove(`${loadingMask.classList[0]}--loading`);
+          body.classList.remove(`${body.classList[0]}--loading`);
         }
       }
 
