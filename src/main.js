@@ -5,6 +5,8 @@ import axios from 'axios';
 import { config } from './config';
 
 window.addEventListener('load', () => {
+  const loadingMask = document.getElementById('bb-loading-mask');
+
   function registerNav() {
     const component = document.getElementById('bb-nav');
     if (component) {
@@ -22,16 +24,26 @@ window.addEventListener('load', () => {
     if (form) {
       const submitButton = form.querySelector('button[type=submit]');
 
+      const toggleLoading = (loading) => {
+        submitButton.disabled = loading;
+
+        if (loading) {
+          loadingMask.classList.add(`${loadingMask.classList[0]}--loading`);
+        } else {
+          loadingMask.classList.remove(`${loadingMask.classList[0]}--loading`);
+        }
+      }
+
       const handleError = (exception, message) => {
         alert(message);
-        submitButton.disabled = false;
+        toggleLoading(false);
         console.error(exception);
       }
 
       form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
-        submitButton.disabled = true;
+        toggleLoading(true);
 
         let recaptchaCode;
         try {
@@ -53,11 +65,11 @@ window.addEventListener('load', () => {
           
           alert("Thanks for your message! I'll be in touch as soon as possible.");
           form.reset();
-          submitButton.disabled = false;
           window.scrollTo(0, 0);
         } catch (e) {
           handleError(e, e.response ? `Error: ${e.response.data.error}` : 'Error sending message. Please try again');
-          return;
+        } finally {
+          toggleLoading(false);
         }
       });
     }
