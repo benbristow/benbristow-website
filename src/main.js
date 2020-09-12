@@ -25,6 +25,8 @@ window.addEventListener('load', () => {
       const submitButton = form.querySelector('button[type=submit]');
 
       const toggleLoading = (loading) => {
+        window.scrollTo(0, 0);
+        
         submitButton.disabled = loading;
 
         if (loading) {
@@ -65,7 +67,6 @@ window.addEventListener('load', () => {
           
           alert("Thanks for your message! I'll be in touch as soon as possible.");
           form.reset();
-          window.scrollTo(0, 0);
         } catch (e) {
           handleError(e, e.response ? `Error: ${e.response.data.error}` : 'Error sending message. Please try again');
         } finally {
