@@ -1,5 +1,5 @@
 ---
-name: Station Game
+title: Station Game
 tagline: UK Train Station Code Trivia Game
 link: https://stationgame.benbristow.co.uk/
 ---

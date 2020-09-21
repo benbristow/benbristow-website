@@ -1,5 +1,5 @@
 ---
-name: All Town Aren't We?
+title: All Town Aren't We?
 tagline: Unofficial Grimsby Town Football Club news aggregation portal
 link: https://alltownarentwe.co.uk/
 ---

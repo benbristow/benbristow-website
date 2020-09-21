@@ -1,5 +1,5 @@
 ---
-name: Random Domain
+title: Random Domain
 tagline: Fun site that brute-force scans random domains until it finds one that responds
 link: https://randomdomain.benbristow.co.uk/
 ---

@@ -1,5 +1,5 @@
 ---
-name: Songkick Spotify Playlist Generator
+title: Songkick Spotify Playlist Generator
 tagline: Web application to generate Spotify Playlists out of Songkick upcoming gig artists
 link: https://songkick.benbristow.co.uk/
 ---

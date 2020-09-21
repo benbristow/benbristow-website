@@ -9,12 +9,12 @@ layout: default
   <article class="bb-portfolio-card row">
     <div class="col-lg-3">
       <a href="{{ portfolio_item.url }}">
-        <img src="/assets/images/portfolio_items/{{ portfolio_item.slug }}.png" alt="Image of {{ portfolio_item.name }}" loading="lazy">
+        <img src="/assets/images/portfolio_items/{{ portfolio_item.slug }}.png" alt="Image of {{ portfolio_item.title }}" loading="lazy">
       </a>
     </div>
 
     <div class="col-lg-9">
-      <h3>{{ portfolio_item.name }}</h3>
+      <h3>{{ portfolio_item.title }}</h3>
       <p>{{ portfolio_item.tagline }}</p>
       <a class="btn btn-primary" href="{{ portfolio_item.url }}">
         More Details

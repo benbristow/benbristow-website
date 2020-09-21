@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
         }
 
         const formData = {
-          name: form.querySelector('[name=Name]').value,
+          title: form.querySelector('[name=Name]').value,
           email: form.querySelector('[name=EmailAddress]').value,
           message: form.querySelector('[name=Message]').value,
           recaptchaCode

@@ -1,5 +1,5 @@
 ---
-name: WhistleWatch
+title: WhistleWatch
 tagline: Unofficial UK National Rail Train Times Website
 link: https://www.whistlewatch.co.uk/
 ---

@@ -1,5 +1,5 @@
 ---
-name: Ted On Tuesday
+title: Ted On Tuesday
 tagline: The life of Ted the Shih Tzu
 link: https://www.tedontuesday.com/
 ---

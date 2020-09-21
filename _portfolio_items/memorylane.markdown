@@ -1,5 +1,5 @@
 ---
-name: Memory Lane
+title: Memory Lane
 tagline: Winning product of the Traveltek ‘#HalfHackathon’ 2017
 link: https://memorylane.benbristow.co.uk/
 ---
