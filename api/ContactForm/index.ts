@@ -5,7 +5,7 @@ import * as mailgunTransport from 'nodemailer-mailgun-transport';
 const Grecaptcha = require('grecaptcha');
 
 const formSchema = Joi.object({
-  title: Joi.string()
+  name: Joi.string()
     .min(3)
     .required(),
   email: Joi.string()
@@ -25,7 +25,7 @@ const buildError = (error) => ({
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
   const data = {
-    title: req.body.name,
+    name: req.body.name,
     email: req.body.email,
     message: req.body.message,
     recaptchaCode: req.body.recaptchaCode,

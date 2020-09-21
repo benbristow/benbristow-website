@@ -1,4 +1,4 @@
-title: Build & Deploy Static Site
+name: Build & Deploy Static Site
 
 on:
   [push]
@@ -9,32 +9,32 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - title: Set up Ruby
+    - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7
 
-    - title: Run bundle install
+    - name: Run bundle install
       run: bundle install
 
-    - title: Setup Node
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
 
-    - title: Install Node Dependencies
+    - name: Install Node Dependencies
       run: npm ci
 
-    - title: Build Assets
+    - name: Build Assets
       run: npm run build
       
-    - title: Build Jekyll site 
+    - name: Build Jekyll site 
       run: bundle exec jekyll build
 
-    - title: Deploy to Azure Blob Storage
+    - name: Deploy to Azure Blob Storage
       uses: bacongobbler/azure-blob-storage-upload@v1.1.0
       with:
           connection_string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
-          container_title: '$web'
+          container_name: '$web'
           source_dir: '_site'
           sync: true

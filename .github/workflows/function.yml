@@ -1,10 +1,10 @@
-title: Deploy Function to Azure
+name: Deploy Function to Azure
 
 on:
   [push]
 
 env:
-  AZURE_FUNCTIONAPP_title: benbristowwebsite-funcs
+  AZURE_FUNCTIONAPP_NAME: benbristowwebsite-funcs
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'api'
   NODE_VERSION: '12.x'
 
@@ -13,15 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - title: 'Checkout Repository'
+    - name: 'Checkout Repository'
       uses: actions/checkout@master
 
-    - title: Setup Node ${{ env.NODE_VERSION }} Environment
+    - name: Setup Node ${{ env.NODE_VERSION }} Environment
       uses: actions/setup-node@v1
       with:
         node-version: ${{ env.NODE_VERSION }}
 
-    - title: 'Build Function'
+    - name: 'Build Function'
       shell: bash
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
@@ -29,10 +29,10 @@ jobs:
         npm run build
         popd
 
-    - title: 'Deploy To Azure Functions'
+    - name: 'Deploy To Azure Functions'
       uses: Azure/functions-action@v1
       id: fa
       with:
-        app-title: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+        app- ${{ env.AZURE_FUNCTIONAPP_NAME }}
         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
         publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
