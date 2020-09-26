@@ -6,6 +6,4 @@ link: https://www.alltownarentwe.co.uk/
 
 Unofficial Grimsby Town Football Club news aggregation portal. Scrapes news headlines, league tables and fixtures from various sources and aggregates them onto a single page.
 
-Created using C# .NET Core 3.1, running on Linux with Docker. Using ASP.NET Razor Pages & Entity Framework.
-
-Using Bootstrap compiled with SCSS via the ParcelJS bundler.
+Created with React for the frontend and TypeScript via Azure Functions on the Azure Static Web Apps platform.
