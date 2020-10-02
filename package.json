@@ -6,13 +6,13 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "bootstrap": "^5.0.0-alpha1",
+    "bootstrap": "^5.0.0-alpha2",
     "parcel-bundler": "^1.12.4",
     "variables": "^1.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.10.0",
-    "sass": "^1.26.10"
+    "@types/node": "^14.11.2",
+    "sass": "^1.26.11"
   },
   "browserslist": [
     "last 1 Chrome versions"
