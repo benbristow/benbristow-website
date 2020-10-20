@@ -3,7 +3,7 @@ export const dev = {
 };
 
 export const production = {
-  apiUrl: 'https://benbristowwebsite-funcs.azurewebsites.net/api'
+  apiUrl: '/api'
 };
 
 export const config = process.env.NODE_ENV === 'development' ? dev : production;
