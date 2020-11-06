@@ -4,6 +4,8 @@ exclude:
   - src/
   - api/
   - .cache/
+  - package.json
+  - package-lock.json
 
 collections:
   portfolio_items:
