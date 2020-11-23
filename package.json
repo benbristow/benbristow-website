@@ -1,8 +1,8 @@
 {
   "name": "benbristow-website",
   "scripts": {
-    "start": "parcel src/main.js",
-    "build": "parcel build src/main.js"
+    "start": "parcel src/main.js --public-url /dist",
+    "build": "parcel build src/main.js --public-url /dist"
   },
   "dependencies": {
     "axios": "^0.20.0",

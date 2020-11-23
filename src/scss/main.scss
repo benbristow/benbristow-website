@@ -1,15 +1,36 @@
 @import 'variables';
 @import '~bootstrap/scss/bootstrap';
 
+$doubleSpacer: $spacer * 2;
+
+
+html, body {
+  min-height: 100%;
+}
+
 img {
   width: 100%;
 }
 
 .bb-wrapper {
-  margin-top: $spacer * 2;
+  background: #fff;
+  min-height: 100vh;
+  padding: $doubleSpacer;
+
+  @include media-breakpoint-down(md) {
+    width: 95%;
+  }
 }
 
 .bb-body {
+  background-color: $christmasRed;
+  overflow-y: scroll;
+
+  @include media-breakpoint-up(lg) {
+    background: url('../images/christmas-bg.jpg');
+    background-size: cover;
+  }
+
   &--loading {
     max-height: 100vh;
     overflow: hidden;
@@ -55,6 +76,7 @@ img {
     font-family: 'Kalam', 'Helvetica', sans-serif;
 
     a {
+      color: $black;
       text-decoration: none;
     }
 
@@ -122,7 +144,9 @@ img {
   }
 
   &__burger-button {
-    @include media-breakpoint-up(lg) {
+    color: $christmasRed;
+
+    @include media-breakpoint-up(md) {
       display: none;
     }
   }
@@ -148,7 +172,7 @@ img {
   padding: $spacer 0 ($spacer * 2) 0;
 
   &__line {
-    border: 1px solid $primary;
+    border: 1px solid $christmasRed;
     margin: $spacer 0;
   }
 
