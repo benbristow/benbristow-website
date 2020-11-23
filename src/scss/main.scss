@@ -1,10 +1,10 @@
-@import 'variables';
-@import '~bootstrap/scss/bootstrap';
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
 
 $doubleSpacer: $spacer * 2;
 
-
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
@@ -27,7 +27,7 @@ img {
   overflow-y: scroll;
 
   @include media-breakpoint-up(lg) {
-    background: url('../images/christmas-bg.jpg');
+    background: url("../images/christmas-bg.jpg");
     background-size: cover;
   }
 
@@ -73,10 +73,9 @@ img {
 
   &__brand {
     flex-grow: 1;
-    font-family: 'Kalam', 'Helvetica', sans-serif;
+    font-family: "Kalam", "Helvetica", sans-serif;
 
     a {
-      color: $black;
       text-decoration: none;
     }
 
@@ -158,13 +157,13 @@ img {
   padding: $spacer * 1.5;
 
   @include media-breakpoint-down(md) {
-      .btn {
-          width: 100%;
-      }
+    .btn {
+      width: 100%;
+    }
 
-      img {
-          margin-bottom: $spacer;
-      }
+    img {
+      margin-bottom: $spacer;
+    }
   }
 }
 
@@ -172,7 +171,7 @@ img {
   padding: $spacer 0 ($spacer * 2) 0;
 
   &__line {
-    border: 1px solid $christmasRed;
+    border: 1px solid $primary;
     margin: $spacer 0;
   }
 
