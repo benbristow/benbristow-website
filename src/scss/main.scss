@@ -5,24 +5,10 @@ $doubleSpacer: $spacer * 2;
 
 html,
 body {
-  min-height: 100%;
+  height: 100%;
 }
 
-img {
-  width: 100%;
-}
-
-.bb-wrapper {
-  background: #fff;
-  min-height: 100vh;
-  padding: $doubleSpacer;
-
-  @include media-breakpoint-down(md) {
-    width: 95%;
-  }
-}
-
-.bb-body {
+body {
   background-color: $christmasRed;
   overflow-y: scroll;
 
@@ -41,6 +27,20 @@ img {
       align-items: center;
       justify-content: center;
     }
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.bb-wrapper {
+  background: #fff;
+  min-height: 100%;
+  padding: $doubleSpacer;
+
+  @include media-breakpoint-down(md) {
+    width: 95%;
   }
 }
 
