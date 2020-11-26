@@ -1,4 +1,5 @@
 @import "variables";
+@import "snow";
 @import "~bootstrap/scss/bootstrap";
 
 $doubleSpacer: $spacer * 2;
@@ -8,7 +9,21 @@ body {
   height: 100%;
 }
 
-body {
+img {
+  width: 100%;
+}
+
+.bb-wrapper {
+  background: #fff;
+  min-height: 100%;
+  padding: $doubleSpacer;
+
+  @include media-breakpoint-down(md) {
+    width: 95%;
+  }
+}
+
+.bb-body {
   background-color: $christmasRed;
   overflow-y: scroll;
 
@@ -27,20 +42,6 @@ body {
       align-items: center;
       justify-content: center;
     }
-  }
-}
-
-img {
-  width: 100%;
-}
-
-.bb-wrapper {
-  background: #fff;
-  min-height: 100%;
-  padding: $doubleSpacer;
-
-  @include media-breakpoint-down(md) {
-    width: 95%;
   }
 }
 

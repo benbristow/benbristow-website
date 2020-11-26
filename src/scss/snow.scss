@@ -1,0 +1,255 @@
+/* Custom animation utils */
+.snow {
+    -moz-transform: rotate(0.02deg);
+    /* firefox fix for jerky animation of snow falling */
+    backface-visibility: hidden;
+    color: #b5d0e9;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+
+    &:after {
+        content: "\2022";
+    }
+}
+
+.animation1 {
+    -webkit-animation: falling-snow1 10s infinite linear;
+    -moz-animation: falling-snow1 10s infinite linear;
+    animation: falling-snow1 10s infinite linear;
+}
+
+@-webkit-keyframes falling-snow1 {
+    0% {
+        -webkit-transform: translate3d(0px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -webkit-transform: translate3d(50px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0px, 1000px, 0);
+    }
+}
+@-moz-keyframes falling-snow1 {
+    0% {
+        -moz-transform: translate3d(0px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -moz-transform: translate3d(50px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translate3d(0px, 1000px, 0);
+    }
+}
+@-o-keyframes falling-snow1 {
+    0% {
+        -o-transform: translate3d(0px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -o-transform: translate3d(50px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -o-transform: translate3d(0px, 1000px, 0);
+    }
+}
+@keyframes falling-snow1 {
+    0% {
+        transform: translate3d(0px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate3d(50px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0px, 1000px, 0);
+    }
+}
+.animation2 {
+    -webkit-animation: falling-snow2 10s infinite linear;
+    -moz-animation: falling-snow2 10s infinite linear;
+    animation: falling-snow2 10s infinite linear;
+}
+@-webkit-keyframes falling-snow2 {
+    0% {
+        -webkit-transform: translate3d(50px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -webkit-transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(50px, 1000px, 0);
+    }
+}
+@-moz-keyframes falling-snow2 {
+    0% {
+        -moz-transform: translate3d(50px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -moz-transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translate3d(50px, 1000px, 0);
+    }
+}
+@-o-keyframes falling-snow2 {
+    0% {
+        -o-transform: translate3d(50px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -o-transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -o-transform: translate3d(50px, 1000px, 0);
+    }
+}
+@keyframes falling-snow2 {
+    0% {
+        transform: translate3d(50px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(50px, 1000px, 0);
+    }
+}
+.animation3 {
+    -webkit-animation: falling-snow3 10s infinite linear;
+    -moz-animation: falling-snow3 10s infinite linear;
+    animation: falling-snow3 10s infinite linear;
+}
+@-webkit-keyframes falling-snow3 {
+    0% {
+        -webkit-transform: translate3d(35px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -webkit-transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(35px, 1000px, 0);
+    }
+}
+@-moz-keyframes falling-snow3 {
+    0% {
+        -moz-transform: translate3d(35px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -moz-transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translate3d(35px, 1000px, 0);
+    }
+}
+@-o-keyframes falling-snow3 {
+    0% {
+        -o-transform: translate3d(35px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -o-transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -o-transform: translate3d(35px, 1000px, 0);
+    }
+}
+@keyframes falling-snow3 {
+    0% {
+        transform: translate3d(35px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate3d(0px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(35px, 1000px, 0);
+    }
+}
+.animation4 {
+    -webkit-animation: falling-snow4 10s infinite linear;
+    -moz-animation: falling-snow4 10s infinite linear;
+    animation: falling-snow4 10s infinite linear;
+}
+@-webkit-keyframes falling-snow4 {
+    0% {
+        -webkit-transform: translate3d(70px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -webkit-transform: translate3d(120px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(70px, 1000px, 0);
+    }
+}
+@-moz-keyframes falling-snow4 {
+    0% {
+        -moz-transform: translate3d(70px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -moz-transform: translate3d(120px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translate3d(70px, 1000px, 0);
+    }
+}
+@-o-keyframes falling-snow4 {
+    0% {
+        -o-transform: translate3d(70px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        -o-transform: translate3d(120px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        -o-transform: translate3d(70px, 1000px, 0);
+    }
+}
+@keyframes falling-snow4 {
+    0% {
+        transform: translate3d(70px, 0, 0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate3d(120px, 500px, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(70px, 1000px, 0);
+    }   
+}
+
+#bb-snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
