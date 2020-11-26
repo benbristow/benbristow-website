@@ -4,13 +4,20 @@
     "start": "parcel src/main.js --public-url /dist",
     "build": "parcel build src/main.js --public-url /dist"
   },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
     "axios": "^0.20.0",
     "bootstrap": "^5.0.0-alpha2",
     "parcel-bundler": "^1.12.4",
     "variables": "^1.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
     "@types/node": "^14.11.2",
     "sass": "^1.26.11"
   },
