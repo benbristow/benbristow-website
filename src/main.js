@@ -4,8 +4,6 @@ import axios from 'axios';
 
 import { config } from './config';
 
-import { Snow } from './lib/snow';
-
 window.addEventListener('load', () => {
   const body = document.getElementById('bb-body');
 

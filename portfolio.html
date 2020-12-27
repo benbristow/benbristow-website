@@ -6,19 +6,20 @@ layout: default
 <h2>Portfolio</h2>
 
 {% for portfolio_item in site.portfolio_items %}
-  <article class="bb-portfolio-card row">
-    <div class="col-lg-3">
-      <a href="{{ portfolio_item.url }}">
-        <img src="/assets/images/portfolio_items/{{ portfolio_item.slug }}.png" alt="Image of {{ portfolio_item.title }}" loading="lazy">
-      </a>
-    </div>
+<article class="bb-portfolio-card row">
+  <div class="col-lg-3">
+    <a href="{{ portfolio_item.url }}">
+      <img class="mb-xl-3" src="/assets/images/portfolio_items/{{ portfolio_item.slug }}.png"
+        alt="Image of {{ portfolio_item.title }}" loading="lazy">
+    </a>
+  </div>
 
-    <div class="col-lg-9">
-      <h3>{{ portfolio_item.title }}</h3>
-      <p>{{ portfolio_item.tagline }}</p>
-      <a class="btn btn-primary" href="{{ portfolio_item.url }}">
-        More Details
-      </a>
-    </div>
-  </article>
+  <div class="col-lg-9">
+    <h3>{{ portfolio_item.title }}</h3>
+    <p>{{ portfolio_item.tagline }}</p>
+    <a class="btn btn-primary" href="{{ portfolio_item.url }}">
+      More Details
+    </a>
+  </div>
+</article>
 {% endfor %}

@@ -1,5 +1,4 @@
 @import "variables";
-@import "snow";
 @import "~bootstrap/scss/bootstrap";
 
 $doubleSpacer: $spacer * 2;
@@ -24,13 +23,7 @@ img {
 }
 
 .bb-body {
-  background-color: $christmasRed;
   overflow-y: scroll;
-
-  @include media-breakpoint-up(lg) {
-    background: url("../images/christmas-bg.jpg");
-    background-size: cover;
-  }
 
   &--loading {
     max-height: 100vh;
@@ -144,7 +137,7 @@ img {
   }
 
   &__burger-button {
-    color: $christmasRed;
+    color: $dark;
 
     @include media-breakpoint-up(md) {
       display: none;
@@ -172,7 +165,7 @@ img {
   padding: $spacer 0 ($spacer * 2) 0;
 
   &__line {
-    border: 1px solid $primary;
+    border: 1px solid $dark;
     margin: $spacer 0;
   }
 
