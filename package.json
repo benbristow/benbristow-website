@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.0-alpha2",
     "parcel-bundler": "^1.12.4",
     "variables": "^1.0.1"
