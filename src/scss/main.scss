@@ -16,10 +16,6 @@ img {
   background: #fff;
   min-height: 100%;
   padding: $doubleSpacer;
-
-  @include media-breakpoint-down(md) {
-    width: 95%;
-  }
 }
 
 .bb-body {
