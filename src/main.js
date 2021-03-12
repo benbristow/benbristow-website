@@ -78,6 +78,5 @@ window.addEventListener('load', () => {
 
   registerNav();
   registerContactFormSubmit();
-  new Snow();
 });
 
