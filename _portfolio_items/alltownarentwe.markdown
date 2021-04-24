@@ -6,4 +6,4 @@ link: https://www.alltownarentwe.co.uk/
 
 Unofficial Grimsby Town Football Club news aggregation portal. Scrapes news headlines, league tables and fixtures from various sources and aggregates them onto a single page.
 
-Created with React for the frontend and TypeScript via Azure Functions on the Azure Static Web Apps platform.
+Created with React for the frontend and C#/.NET for the API via Azure Functions
