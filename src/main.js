@@ -1,11 +1,23 @@
 import './scss/main.scss';
 
+import { ApplicationInsights } from '@microsoft/applicationinsights-web'
 import axios from 'axios';
 
 import { config } from './config';
 
 window.addEventListener('load', () => {
   const body = document.getElementById('bb-body');
+
+  function registerAppInsights() {
+    const appInsights = new ApplicationInsights({
+      config: {
+        instrumentationKey: 'bb397acc-54ed-4f2e-a08e-9e8d1ad6e3d2'
+      }
+    });
+    
+    appInsights.loadAppInsights();
+    appInsights.trackPageView(); // Manually call trackPageView to establish the current user/session/pageview
+  }
 
   function registerNav() {
     const component = document.getElementById('bb-nav');
@@ -76,6 +88,7 @@ window.addEventListener('load', () => {
     }
   }
 
+  registerAppInsights();
   registerNav();
   registerContactFormSubmit();
 });
