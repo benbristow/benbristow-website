@@ -10,4 +10,4 @@ Winning product of the Traveltek ‘#HalfHackathon’ 2017
 
 Frontend built in React
 
-Backend was originally built using Python/Flask, but now runs on Azure Functions with Typescript.
+Backend was originally built using Python/Flask, but now runs on Azure Functions with C#/.NET.
