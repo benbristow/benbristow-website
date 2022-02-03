@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@microsoft/applicationinsights-web": "^2.6.3",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "bootstrap": "^5.0.1"
   },
   "devDependencies": {
