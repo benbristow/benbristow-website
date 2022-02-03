@@ -7,6 +7,9 @@ exclude:
   - package.json
   - package-lock.json
 
+keep_files:
+  - assets
+
 collections:
   portfolio_items:
     output: true

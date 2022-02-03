@@ -1,8 +1,8 @@
 {
   "name": "benbristow-website",
   "scripts": {
-    "start": "parcel src/main.js --public-url /dist",
-    "build": "parcel build src/main.js --public-url /dist"
+    "start": "parcel src/main.js --public-url /_site/dist",
+    "build": "parcel build src/main.js --public-url /_site/dist"
   },
   "babel": {
     "plugins": [
