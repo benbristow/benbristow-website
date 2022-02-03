@@ -30,7 +30,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Build Assets
-        run: npm run build
+        run: npm run-script build
 
       - name: Build And Deploy
         id: builddeploy
