@@ -6,4 +6,6 @@ export const production = {
   apiUrl: '/api'
 };
 
-export const config = process.env.NODE_ENV === 'development' ? dev : production;
+console.log(dev);
+
+export default process.env.NODE_ENV === 'development' ? dev : production;

@@ -1,23 +1,17 @@
 ---
-layout: default
+layout: page
 ---
 
-<h2 class="mb-4">{{ page.title }}</h2>
-
-<div class="row">
-  <div class="col-md-4">
+<main class="row gx-5">
+  <div class="col-md-7">
     <img src="/assets/images/portfolio_items/{{ page.slug }}.png" alt="Image of {{ page.title }}" />
   </div>
   
-  <div class="col-md-8">
-      <div class="card mb-3 border-0 bg-light">
-          <div class="card-body">
-            {{ content }}
-          </div>
-      </div>
+  <div class="col-md-4">
+      {{ content }}
 
       <a class="btn btn-primary btn-block" target="_blank" href="{{ page.link }}">
           Visit {{ page.title }}
       </a>
   </div>
-</div>
+</main>

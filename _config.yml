@@ -4,8 +4,10 @@ exclude:
   - src/
   - api/
   - .cache/
+  - .parcel-cache
   - package.json
   - package-lock.json
+  - api.nswag.json
 
 keep_files:
   - assets
