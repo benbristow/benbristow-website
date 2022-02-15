@@ -2,16 +2,18 @@
 layout: page
 ---
 
-<main class="row gx-5">
-  <div class="col-md-7">
+<main class="row gx-5 gy-3">
+  <div class="col-lg-7">
     <img src="/assets/images/portfolio_items/{{ page.slug }}.png" alt="Image of {{ page.title }}" />
   </div>
   
-  <div class="col-md-4">
+  <div class="col-lg-4">
       {{ content }}
 
-      <a class="btn btn-primary btn-block" target="_blank" href="{{ page.link }}">
-          Visit {{ page.title }}
-      </a>
+      <div class="d-grid gap-2">
+        <a class="btn btn-primary btn-lg" target="_blank" href="{{ page.link }}">
+            Visit {{ page.title }}
+        </a>
+      </div>
   </div>
 </main>

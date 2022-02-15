@@ -4,7 +4,6 @@
     v-if="!submitted"
     v-model="formData"
     submit-label="Send message"
-    input-class="btn btn-lg btn-primary"
     @submit="submitHandler"
   >
     <div v-if="error" class="alert alert-danger" role="alert">
