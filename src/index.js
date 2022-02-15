@@ -2,7 +2,7 @@ import './scss/main.scss';
 
 import { ApplicationInsights } from '@microsoft/applicationinsights-web';
 
-import ContactApp from './contact';
+import createContactApp from './contact';
 
 const appInsights = new ApplicationInsights({
     config: {
@@ -16,6 +16,7 @@ appInsights.trackPageView();
 window.addEventListener('load', () => {
     const contactElement = document.getElementById('bb-js-contact');
     if (contactElement) {
-        ContactApp.mount(contactElement);
+        const contactApp = createContactApp();
+        contactApp.mount(contactElement);
     }
 });
