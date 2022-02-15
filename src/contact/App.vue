@@ -47,7 +47,7 @@
 
   <div v-else>
     <h3 class="h4">Thank you for your message!</h3>
-    <p>I'll be in touch with you as soon as possible..</p>
+    <p>I'll be in touch with you as soon as possible.</p>
     <a href="/" class="btn btn-primary btn-md" role="button">&larr; Go back to the homepage</a>
   </div>
 </template>
