@@ -6,6 +6,6 @@ link: https://www.kegfinder.co.uk
 
 A web application that provides an interactive map for finding stores that sell kegs for various home beer dispensing machines, like The Sub®, Philips PerfectDraft and Blade®
 
-Built fully cloud-native on Azure with Table Storage, Functions (C#/.NET), Blob Storage Static Website and Azure AD authentication for the admin application.
+Backend written in C#/.NET 6 with Entity Framework and PostgreSQL, hosted using Docker. Uses Azure AD for internal authentication.
 
-Frontend built with React
+Frontends (public facing & backend) built with React and hosted on Azure Blob Storage Static Websites.
