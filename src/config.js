@@ -1,9 +1,9 @@
 export const dev = {
-  apiUrl: 'http://localhost:7071/api'
+  apiUrl: 'https://localhost:7238'
 };
 
 export const production = {
-  apiUrl: '/api'
+  apiUrl: 'https://api2.ben.bristow.me'
 };
 
 export default process.env.NODE_ENV === 'development' ? dev : production;

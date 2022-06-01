@@ -56,6 +56,7 @@
 import axios from "axios";
 
 import config from "../config.js";
+import { getApiErrorMessage } from "../helpers/ApiHelper.js";
 
 export default {
   data() {
@@ -81,7 +82,7 @@ export default {
 
         this.submitted = true;
       } catch (e) {
-        this.error = e.response?.data?.detail ?? "An unexpected error occurred. Please try again later.";
+        this.error = getApiErrorMessage(e) ?? "An unexpected error occurred. Please try again later.";
         console.error(e);
       }
     },
