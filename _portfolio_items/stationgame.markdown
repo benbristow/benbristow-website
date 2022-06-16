@@ -1,7 +1,7 @@
 ---
 title: Station Game
 tagline: UK Train Station Code Trivia Game
-link: https://stationgame.benbristow.co.uk/
+link: https://stationgame.ben.bristow.me/
 ---
 
 Built this a while back in Next.JS/React with Bootstrap 4.
