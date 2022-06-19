@@ -3,7 +3,7 @@ export const dev = {
 };
 
 export const production = {
-  apiUrl: 'https://api2.ben.bristow.me'
+  apiUrl: 'https://api.ben.bristow.me'
 };
 
 export default process.env.NODE_ENV === 'development' ? dev : production;
