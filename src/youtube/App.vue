@@ -4,7 +4,7 @@
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>
-  <div v-else-if="videos">
+  <div v-else-if="videos?.length > 0">
     <div class="row">
       <a class="col-lg-6 mb-5 text-decoration-none" v-for="video in videos" :key="video.id" :href="video.url" :title="video.title" target="_blank" rel="noopener noreferrer">
         <img class="mb-3 youtube-thumbnail" :src="video.thumbnail" :alt="video.title" loading="lazy" />
@@ -12,7 +12,7 @@
         <strong>{{ formatDate(video.date) }}</strong>
       </a>
     </div>
-    <div class="d-grid  ">
+    <div class="d-grid">
       <a class="btn btn-primary" :href="youtubeChannelUrl" target="_blank" rel="noopener noreferrer">
         View more videos on YouTube
       </a>
