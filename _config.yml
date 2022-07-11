@@ -1,4 +1,5 @@
 title: Ben Bristow
+url: "https://ben.bristow.me"
 
 exclude:
   - src/
@@ -24,3 +25,4 @@ defaults:
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
