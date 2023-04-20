@@ -2,8 +2,8 @@ import { createApp } from 'vue';
 
 import App from './App.vue';
 
-const createYoutubeApp = () => {
+const createPhotosApp = () => {
     return createApp(App)
 }
 
-export default createYoutubeApp;
+export default createPhotosApp;

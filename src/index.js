@@ -1,11 +1,13 @@
 import './scss/main.scss';
 
 import createContactApp from './contact';
-import createYoutubeApp from './youtube';
+import createPhotosApp from './photos';
+import createVideosApp from './videos';
 
 const appCreators = {
     contact: createContactApp,
-    youtube: createYoutubeApp
+    photos: createPhotosApp,
+    videos: createVideosApp,
 }
 
 window.addEventListener('load', () => {

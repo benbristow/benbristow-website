@@ -7,7 +7,7 @@
   <div v-else-if="videos?.length > 0">
     <div class="row">
       <a class="col-lg-6 mb-5 text-decoration-none" v-for="video in videos" :key="video.id" :href="video.url" :title="video.title" target="_blank" rel="noopener noreferrer">
-        <img class="mb-3 youtube-thumbnail" :src="video.thumbnail" :alt="video.title" loading="lazy" />
+        <img class="mb-3 video-thumbnail" :src="video.thumbnail" :alt="video.title" loading="lazy" />
         <h2 class="h4 text-decoration-underline">{{ video.title }}</h2>
         <strong>{{ formatDate(video.date) }}</strong>
       </a>
@@ -20,7 +20,7 @@
   </div>
   <div v-else>
       <div class="alert alert-danger">
-        Error trying to retrieve my latest YouTube videos. You can click the button below to browse them on YouTube directly instead as an alternative.
+        Error trying to retrieve my latest videos. You can click the button below to browse them on YouTube directly instead as an alternative.
       </div>
       <a class="btn btn-primary" :href="youtubeChannelUrl" target="_blank" rel="noopener noreferrer">
         Watch on YouTube directly instead
@@ -29,7 +29,7 @@
 </template>
 
 <style lang="scss" scoped>
-  .youtube-thumbnail {
+  .video-thumbnail {
     height: 360px;
     width: 100%;
     object-fit: cover;
@@ -63,7 +63,7 @@ export default {
     formatDate: date => FormatDate(date),
     getVideos() {
       axios
-        .get(config.apiUrl + "/YouTubeVideos")
+        .get(config.apiUrl + "/Videos")
         .then(response => {
           this.videos = response.data;
           this.loading = false;

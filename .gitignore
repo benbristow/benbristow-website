@@ -7,3 +7,4 @@ _site
 vendor
 dist
 node_modules
+.idea
