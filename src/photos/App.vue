@@ -5,7 +5,7 @@
     </div>
   </div>
   <div v-else-if="photos?.length > 0">
-    <h3 class="mb-4"><i class="fa fa-camera"></i> My recent photos on Flickr</h3>
+    <h3 class="mb-4"><i class="fa fa-camera"></i> My recent photos on <a href="https://www.flickr.com/photos/benbrist" target="_blank" rel="noopener noreferrer">Flickr</a></h3>
 
     <div class="row">
       <a class="photo-thumbnail col-lg-6 mb-5 text-decoration-none" v-for="photo in photos" :key="photo.id"
