@@ -42,6 +42,7 @@
 
   &__caption {
     align-items: center;
+    animation: fade 0.2s ease-in;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     display: flex;
@@ -55,6 +56,13 @@
     text-align: center;
     top: 0;
     width: 100%;
+
+    @keyframes fade {
+      0% {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0)
+      }
+    }
   }
 }
 </style>
