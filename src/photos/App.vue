@@ -11,7 +11,7 @@
       <a class="photo-thumbnail col-lg-6 mb-5 text-decoration-none" v-for="photo in photos" :key="photo.id"
         :href="photo.url" :title="photo.altText" target="_blank" rel="noopener noreferrer">
         <div class="photo-thumbnail__inner">
-          <img class="photo-thumbnail" :src="photo.imageUrl" :alt="photo.title" loading="lazy" />
+          <img class="photo-thumbnail" :src="photo.imageUrl" :alt="photo.altText" loading="lazy" />
           <div class="photo-thumbnail__caption">
             {{ photo.altText }}
           </div>
