@@ -8,9 +8,14 @@
     <h3 class="mb-4"><i class="fa fa-camera"></i> My recent photos on Flickr</h3>
 
     <div class="row">
-      <a class="col-lg-6 mb-5 text-decoration-none" v-for="photo in photos" :key="photo.id" :href="photo.url"
-         :title="photo.altText" target="_blank" rel="noopener noreferrer">
-        <img class="mb-3 photo-thumbnail" :src="photo.imageUrl" :alt="photo.title" loading="lazy"/>
+      <a class="photo-thumbnail col-lg-6 mb-5 text-decoration-none" v-for="photo in photos" :key="photo.id"
+        :href="photo.url" :title="photo.altText" target="_blank" rel="noopener noreferrer">
+        <div class="photo-thumbnail__inner">
+          <img class="photo-thumbnail" :src="photo.imageUrl" :alt="photo.title" loading="lazy" />
+          <div class="photo-thumbnail__caption">
+            {{ photo.altText }}
+          </div>
+        </div>
       </a>
     </div>
   </div>
@@ -22,12 +27,36 @@
 </template>
 
 <style lang="scss" scoped>
-  .photo-thumbnail {
-    height: 360px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+.photo-thumbnail {
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+
+  &__inner {
+    position: relative;
+
+    &:not(:hover) .photo-thumbnail__caption {
+      display: none;
+    }
   }
+
+  &__caption {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    padding: 1.5rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+  }
+}
 </style>
 
 <script>
@@ -59,7 +88,7 @@ export default {
           this.loading = false;
         })
         .catch(error => {
-          this.loading =false;
+          this.loading = false;
           console.error(error);
         });
     },
