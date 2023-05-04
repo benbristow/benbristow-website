@@ -1,0 +1,19 @@
+$primary: #000;
+
+$headings-font-family: "Sarala", Helvetica, sans-serif;
+$headings-font-weight: 400;
+$font-size-base: 1.15rem;
+
+$enable-rounded: false;
+
+@import 'bootstrap/scss/bootstrap';
+
+html,
+body,
+#__nuxt{
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
