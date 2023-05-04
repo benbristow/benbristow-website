@@ -8,5 +8,3 @@
         <Videos/>
     </ClientOnly>
 </template>
-<script setup>
-</script>

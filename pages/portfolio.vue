@@ -5,5 +5,3 @@
 
     <h2>Portfolio</h2>
 </template>
-<script setup>
-</script>
