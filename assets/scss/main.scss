@@ -10,8 +10,12 @@ $enable-rounded: false;
 
 html,
 body,
-#__nuxt{
+#__nuxt {
   height: 100%;
+}
+
+body {
+  border-top: $primary 32px solid;
 }
 
 img {

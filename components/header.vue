@@ -18,10 +18,6 @@
 </template>
 
 <style scoped lang="scss">
-    header {
-        border-top: #000 32px solid;
-    }
-
     h1 {
         font-weight: 700;
     }
