@@ -1,6 +1,6 @@
 <template>
     <div v-if="state.photos">
-        <h2 class="mb-4"><i class="fa fa-camera"></i> My recent photos on <a
+        <h2 class="mb-4"><i class="fa fa-camera" aria-hidden="true"></i> My recent photos on <a
                 href="https://www.flickr.com/photos/benbrist" target="_blank" rel="noopener noreferrer">Flickr</a></h2>
         <div class="row">
             <a class="photo-thumbnail col-lg-6 mb-5 text-decoration-none" v-for="photo in state.photos" :key="photo.id"

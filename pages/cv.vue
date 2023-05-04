@@ -3,15 +3,14 @@
         <Title>CV</Title>
     </Head>
 
-    <h2>CV</h2>
-
+    <h2 class="mb-4">CV</h2>
     <div class="row">
         <div class="col-lg-3">
             <div class="card border-0 bg-light mb-3">
                 <div class="card-body">
                     <img class="mb-3" src="/images/selfie.webp" alt="Selfie"/>
 
-                    <h3 class="h4"><i class="fa fa-id-card"></i> Contact</h3>
+                    <h3 class="h4"><i class="fa fa-id-card" aria-hidden="true"></i> Contact</h3>
                     <p>
                         <i class="fa fa-map-marker"></i> Paisley, Scotland<br/>
                         <i class="fa fa-mobile"></i> <a href="tel:+447479202371">07479202371</a><br/>
@@ -111,3 +110,5 @@
         </div>
     </div>
 </template>
+<script setup>
+</script>
