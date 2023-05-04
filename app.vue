@@ -14,5 +14,3 @@
   min-height: 100%;
 }
 </style>
-<script setup>
-</script>

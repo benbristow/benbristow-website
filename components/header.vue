@@ -17,9 +17,6 @@
     </header>
 </template>
 
-<script setup lang="ts">
-</script>
-
 <style scoped lang="scss">
     header {
         border-top: #000 32px solid;

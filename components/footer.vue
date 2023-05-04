@@ -1,6 +1,3 @@
-<script setup lang="ts">
-const currentYear = new Date().getFullYear();
-</script>
 
 <template>
     <footer class="bg-light text-center py-5 mt-5">
@@ -10,6 +7,6 @@ const currentYear = new Date().getFullYear();
     </footer>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<script setup lang="ts">
+const currentYear = new Date().getFullYear();
+</script>

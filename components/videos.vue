@@ -35,7 +35,6 @@ onMounted(async () => {
     const apiClient = getApiClient();
     state.videos = await apiClient.videos();
 });
-
 </script>
 
 <style scoped lang="scss">
