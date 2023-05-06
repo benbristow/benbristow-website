@@ -17,6 +17,6 @@ export default defineNuxtConfig({
         'nuxt-gtag'
     ],
     gtag: {
-        id: 'UA-41573269-1'
+        id: 'G-MJPHTK1B24'
     }
 });
