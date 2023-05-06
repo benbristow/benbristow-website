@@ -13,7 +13,7 @@
                     <h3>{{ track.title }}</h3>
                     <p><strong>{{ track.artist }}</strong></p>
                     <a class="btn btn-primary" :href="track.url" rel="noreferrer noopener" target="_blank">
-                        <i class="fa fa-lastfm"></i> View on Last.fm
+                        <i class="fa fa-lastfm" aria-hidden="true"></i> View on Last.fm
                     </a>
                 </div>
             </div>
