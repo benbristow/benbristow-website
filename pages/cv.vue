@@ -19,10 +19,10 @@
 
                     <h3 class="h4"><i class="fa fa-graduation-cap"></i> Education</h3>
                     <dl>
-                        <dt>University Of The West Of Scotland, Paisley Campus</dt>
+                        <dt><a href="https://www.uws.ac.uk" target="_blank" rel="noopener noreferrer">University Of The West Of Scotland, Paisley Campus</a></dt>
                         <dd>Bsc Distinction Web &amp; Mobile Development 2018</dd>
 
-                        <dt>Franklin College, Grimsby</dt>
+                        <dt><a href="https://www.franklin.ac.uk" target="_blank" rel="noopener noreferrer">Franklin College, Grimsby</a></dt>
                         <dd>
                             A2 Computing 2015 <br/>
                             A2 Media Studies 2015<br/>
@@ -39,7 +39,7 @@
 
                 <div class="card border-0 bg-light my-3">
                     <div class="card-body">
-                        <h4>Ofgem</h4>
+                        <h4><a href="https://www.ofgem.gov.uk" target="_blank" rel="noopener noreferrer">Ofgem</a></h4>
 
                         <p class="lead">Principal Software Engineer, Glasgow City Centre, January 2023 - Current</p>
 
@@ -60,7 +60,7 @@
 
                 <div class="card border-0 bg-light mb-3">
                     <div class="card-body">
-                        <h4>Sword IT Solutions</h4>
+                        <h4><a href="https://www.sword-group.com/" target="_blank" rel="noopener noreferrer">Sword IT Solutions</a></h4>
                         <p class="lead">Developer, Glasgow City Centre, June 2019 - June 2020</p>
                         <p>Primarily working with Equiniti &amp; Canada Life on their web pensions platform for
                             Independent
@@ -82,7 +82,7 @@
 
                 <div class="card border-0 bg-light mb-3">
                     <div class="card-body">
-                        <h4>Traveltek</h4>
+                        <h4><a href="https://www.traveltek.com//" target="_blank" rel="noopener noreferrer">Traveltek</a></h4>
                         <p class="lead">Developer, East Kilbride, Scotland, November 2017 - June 2019</p>
                         <p>Working primarily as a frontend developer on a wide variety of multi-faceted B2C &amp;
                             B2B travel
