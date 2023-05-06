@@ -3,7 +3,7 @@
         <article class="col-md-6 gx-5 gy-3 mb-5" v-for="track in tracks" :key="track.url">
             <div class="row">
                 <div class="col-md-3">
-                    <a  :href="track.url" rel="noreferrer noopener" target="_blank">
+                    <a :href="track.url" rel="noreferrer noopener" target="_blank">
                         <img :src="track.image" alt="Album Artwork" class="mb-3"
                              loading="lazy"/>
                     </a>
@@ -23,5 +23,6 @@
 
 <script setup lang="ts">
 import { getApiClient } from "~/helpers/apiClientHelper";
+
 const tracks = await getApiClient().topTracks();
 </script>
