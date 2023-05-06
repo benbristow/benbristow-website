@@ -17,7 +17,7 @@
                     <div class="col-lg-5">
                         <ContentRenderer :value="doc"/>
                         <a :href="doc.link" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
-                            <i class="fa fa-external-link"></i> Visit
+                            <i class="fa fa-external-link" aria-hidden="true"></i> Visit
                             {{ doc.title }}</a>
                     </div>
                 </div>

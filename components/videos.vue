@@ -9,8 +9,8 @@
         </a>
     </div>
 
-    <a class="btn btn-primary" :href="youtubeChannelUrl" target="_blank" rel="noopener noreferrer">
-        View more videos on YouTube
+    <a class="btn btn-primary btn-lg view-more-button" :href="youtubeChannelUrl" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-external-link mx-1" aria-hidden="true"></i> View more videos on YouTube
     </a>
 </template>
 
@@ -30,5 +30,9 @@ const videos = await getApiClient().videos();
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.view-more-button {
+    width: 100%;
 }
 </style>
