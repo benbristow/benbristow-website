@@ -3,8 +3,8 @@
         <Title>Home</Title>
     </Head>
 
-    <div class="row gy-3 gx-5 mb-4">
-        <div class="col-lg-3">
+    <div class="row mb-4">
+        <div class="col-lg-3 gx-5">
             <img class="mb-3" src="/images/selfie.webp" alt="Selfie"/>
         </div>
         <div class="col-lg-9">
