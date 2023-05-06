@@ -14,5 +14,9 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
         '@formkit/nuxt',
+        'nuxt-gtag'
     ],
+    gtag: {
+        id: 'UA-41573269-1'
+    }
 });
