@@ -5,7 +5,7 @@
     
     <h2 class="mb-4">Portfolio</h2>
 
-    <article class="row gx-5 gy-3 mb-5" v-for="datum in data">
+    <article class="row gx-5 gy-3 mb-5" v-for="datum in data" :key="datum.id">
         <div class="col-lg-3">
             <img :src="`/images/portfolio/${datum.id}.webp`" :alt="`Screenshot of ${datum.title}`" class="mb-3"
                  loading="lazy"/>
