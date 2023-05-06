@@ -1,0 +1,41 @@
+@import "bootstrap/scss/functions";
+
+$primary: #000;
+
+$headings-font-family: "Sarala", Helvetica, sans-serif;
+$headings-font-weight: 400;
+$font-size-base: 1.15rem;
+
+$enable-rounded: false;
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/utilities/api";
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+body {
+  border-top: $primary 32px solid;
+}
+
+img {
+  width: 100%;
+}
