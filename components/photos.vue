@@ -1,8 +1,8 @@
 <template>
     <h2 class="mb-4"><i class="fa fa-camera" aria-hidden="true"></i> My recent photos on <a
             href="https://www.flickr.com/photos/benbrist" target="_blank" rel="noopener noreferrer">Flickr</a></h2>
-    <div class="row">
-        <a class="photo-thumbnail col-lg-6 gy-4 text-decoration-none" v-for="photo in photos" :key="photo.id"
+    <div class="row gy-4">
+        <a class="d-block photo-thumbnail col-lg-6 text-decoration-none" v-for="photo in photos" :key="photo.id"
            :href="photo.url" :title="photo.altText" target="_blank" rel="noopener noreferrer">
             <div class="photo-thumbnail__inner">
                 <img class="photo-thumbnail" :src="photo.imageUrl" :alt="photo.altText" loading="lazy"/>
