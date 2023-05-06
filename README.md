@@ -19,6 +19,13 @@ pnpm install
 
 ## Development Server
 
+### Ensure IDE has environment variable set for self-signed API certificate
+
+```sh
+NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
+### Start
 Start the development server on `http://localhost:3000`
 
 ```bash

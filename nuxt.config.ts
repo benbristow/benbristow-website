@@ -11,5 +11,8 @@ export default defineNuxtConfig({
         },
     },
     css: ['@/assets/scss/main.scss'],
-    ssr: false,
+    modules: [
+        '@nuxt/content',
+        '@formkit/nuxt',
+    ],
 });

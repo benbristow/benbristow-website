@@ -8,7 +8,7 @@
             <img class="mb-3" src="/images/selfie.webp" alt="Selfie"/>
         </div>
         <div class="col-lg-9">
-            <h2>Hello world!</h2>
+            <h2>Hello, world!</h2>
             <p>I'm a full-stack software engineer and 'Web & Mobile Development (Bsc)' graduate from the University of
                 the West of Scotland (Paisley Campus). I was originally born in Grimsby, England and I'm a big Grimsby
                 Town Football Club fan!</p>
@@ -24,7 +24,5 @@
         </div>
     </div>
 
-    <ClientOnly>
-        <Photos/>
-    </ClientOnly>
+    <Photos/>
 </template>

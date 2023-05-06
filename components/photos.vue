@@ -1,35 +1,23 @@
 <template>
-    <div v-if="state.photos">
-        <h2 class="mb-4"><i class="fa fa-camera" aria-hidden="true"></i> My recent photos on <a
-                href="https://www.flickr.com/photos/benbrist" target="_blank" rel="noopener noreferrer">Flickr</a></h2>
-        <div class="row">
-            <a class="photo-thumbnail col-lg-6 mb-5 text-decoration-none" v-for="photo in state.photos" :key="photo.id"
-               :href="photo.url" :title="photo.altText" target="_blank" rel="noopener noreferrer">
-                <div class="photo-thumbnail__inner">
-                    <img class="photo-thumbnail" :src="photo.imageUrl" :alt="photo.altText" loading="lazy"/>
-                    <div class="photo-thumbnail__caption">
-                        {{ photo.altText }}
-                    </div>
+    <h2 class="mb-4"><i class="fa fa-camera" aria-hidden="true"></i> My recent photos on <a
+            href="https://www.flickr.com/photos/benbrist" target="_blank" rel="noopener noreferrer">Flickr</a></h2>
+    <div class="row">
+        <a class="photo-thumbnail col-lg-6 mb-5 text-decoration-none" v-for="photo in photos" :key="photo.id"
+           :href="photo.url" :title="photo.altText" target="_blank" rel="noopener noreferrer">
+            <div class="photo-thumbnail__inner">
+                <img class="photo-thumbnail" :src="photo.imageUrl" :alt="photo.altText" loading="lazy"/>
+                <div class="photo-thumbnail__caption">
+                    {{ photo.altText }}
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
 </template>
 
 <script setup lang="ts">
-import { reactive } from "@vue/runtime-core";
-
 import { getApiClient } from "~/helpers/apiClientHelper";
-import { PhotoViewModel } from "~/apiClient";
 
-const state = reactive({
-    photos: null as PhotoViewModel[] | null
-});
-
-onMounted(async () => {
-    const apiClient = getApiClient();
-    state.photos = await apiClient.photos();
-});
+const photos = await getApiClient().photos();
 </script>
 
 <style scoped lang="scss">
