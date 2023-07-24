@@ -19,7 +19,7 @@
 
                 <a class="mx-2" href="https://www.flickr.com/photos/benbrist" title="My Flickr" target="_blank"
                    rel="noopener noreferrer">
-                    <i class="fa fa-camera" aria-hidden="true"></i>
+                    <i class="fa fa-flickr" aria-hidden="true"></i>
                 </a>
 
                 <a class="mx-2" href="https://www.github.com/benbristow" title="My GitHub" target="_blank"
