@@ -10,15 +10,15 @@
     "nswag": "nswag run .\\api.nswag"
   },
   "devDependencies": {
-    "@formkit/nuxt": "^0.16.5",
+    "@formkit/nuxt": "^1.0.0",
     "@nuxt/content": "^2.6.0",
-    "@types/node": "^18",
+    "@types/node": "^20.5.9",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "dayjs": "^1.11.7",
     "nswag": "^13.19.0",
     "nuxt": "^3.4.3",
-    "nuxt-gtag": "^0.5.7",
+    "nuxt-gtag": "^0.6.2",
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
     "typescript": "^5.0.4",
