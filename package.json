@@ -13,7 +13,7 @@
     "@formkit/nuxt": "^1.0.0",
     "@nuxt/content": "^2.6.0",
     "@types/node": "^20.5.9",
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "bootstrap": "^5.2.3",
     "dayjs": "^1.11.7",
     "nswag": "^13.19.0",
