@@ -1,6 +1,9 @@
 {
   "name": "benbristow-website-app",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
