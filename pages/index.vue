@@ -14,7 +14,7 @@
                 Town Football Club fan!</p>
             <p>I currently work for Ofgem, the UK government's 'Office of Gas and Electricity Markets' regulator based
                 in their office in Glasgow City Centre, working in a hybrid capacity as a principal software engineer
-                working with modern web technologies including C#/ASP.NET (.NET 7) following agile &amp; DevOps
+                working with modern web technologies including C#/ASP.NET (.NET 7/8) following agile &amp; DevOps
                 methodology.</p>
             <p>In my free-time I like to work on pet-projects and travel (mainly by rail), creating video content &amp;
                 taking photographs. I also love listening to music &amp; attending live events.</p>
