@@ -7,6 +7,7 @@
             <nav role="navigation">
                 <ul class="fw-light list-inline">
                     <li class="list-inline-item mx-2"><NuxtLink href="/">Home</NuxtLink></li>
+                    <li class="list-inline-item mx-2"><a href="https://blog.ben.bristow.me/">Blog</a></li>
                     <li class="list-inline-item mx-2"><NuxtLink href="/portfolio">Portfolio</NuxtLink></li>
                     <li class="list-inline-item mx-2"><NuxtLink href="/cv">CV</NuxtLink></li>
                     <li class="list-inline-item mx-2"><NuxtLink href="/youtube">YouTube</NuxtLink></li>
