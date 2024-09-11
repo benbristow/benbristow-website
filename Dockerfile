@@ -1,25 +1,26 @@
-# Dockerfile
-FROM oven/bun:latest
+# Use an official Node runtime as the base image
+FROM node:lts-alpine
 
-# Set working directory
-WORKDIR /usr/src/app
+# Set the working directory in the container
+WORKDIR /app
 
-# Set environment variable (default to production)
-ARG NODE_ENV=production
-ENV NODE_ENV=$NODE_ENV
+# Copy package.json and package-lock.json (if available)
+COPY package*.json ./
 
-# Install dependencies using Bun
-COPY bun.lockb package.json ./
-RUN bun install
+# Install dependencies
+RUN npm install
 
 # Copy the rest of the application code
 COPY . .
 
-# Build the Nuxt app using Bun
-RUN bun run build
+# Build the Nuxt application
+RUN npm run build
 
-# Expose port 3000
+# Set the environment variable to production
+ENV NODE_ENV=production
+
+# Expose the port the app runs on
 EXPOSE 3000
 
-# Start the Nuxt app using Bun
-CMD ["bun", "run", "start"]
+# Start the application
+CMD ["node", ".output/server/index.mjs"]
