@@ -5,7 +5,7 @@
 Make sure to install the dependencies:
 
 ```bash
-bun install
+npm install
 ```
 
 ### Backend API
@@ -26,7 +26,7 @@ NODE_TLS_REJECT_UNAUTHORIZED=0
 Start the development server on `http://localhost:3000`
 
 ```bash
-bun run dev
+npm run dev
 ```
 
 ## Production
@@ -34,11 +34,11 @@ bun run dev
 Build the application for production:
 
 ```bash
-bun run build
+npm run build
 ```
 
 Locally preview production build:
 
 ```bash
-bun run preview
+npm run preview
 ```
