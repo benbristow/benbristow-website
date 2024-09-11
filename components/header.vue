@@ -10,7 +10,6 @@
                     <li class="list-inline-item mx-2"><a href="https://blog.ben.bristow.me/">Blog</a></li>
                     <li class="list-inline-item mx-2"><NuxtLink href="/portfolio">Portfolio</NuxtLink></li>
                     <li class="list-inline-item mx-2"><NuxtLink href="/cv">CV</NuxtLink></li>
-                    <li class="list-inline-item mx-2"><NuxtLink href="/youtube">YouTube</NuxtLink></li>
                     <li class="list-inline-item mx-2"><NuxtLink href="/lastfm">Last.fm</NuxtLink></li>
                     <li class="list-inline-item mx-2"><NuxtLink href="/contact">Contact</NuxtLink></li>
                 </ul>
